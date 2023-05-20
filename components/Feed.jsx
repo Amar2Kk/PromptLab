@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import PromptCard from './PromptCard.jsx';
 import CardSkeleton from './CardSkeleton.jsx';
+import Alert from './Alert.jsx';
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
@@ -73,6 +74,7 @@ const Feed = () => {
           className='search_input peer'
         />
       </form>
+      <Alert />
       {loading ? (
         <div className='mt-16 prompt_layout'>
           <CardSkeleton />
